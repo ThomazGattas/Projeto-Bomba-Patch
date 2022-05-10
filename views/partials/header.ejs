@@ -1,0 +1,19 @@
+<header>
+  <div class="container">
+      <a class="logo" href="index.html"><img src="img/Musculo-Logo.png" alt="Musculo logo"></a>
+      <h1>Bomba Patch Store</h1>
+  <nav>
+      <ul>
+          <li><a href="/sobre">Sobre</a></li>
+          <li><a href="/produtos">Nossos produtos</a></li>
+          <li><a href="/contato">Contato</a></li>
+          <% if(estaLogado) { %>
+            <li><a href="/admin"><%= usuarioLogado.nome %></a></li>
+            <li><a href="/logout">Logout</a></li>
+          <% } else { %>
+            <li><a href="/login">Login</a></li>
+          <% } %>
+      </ul>
+  </nav>
+  </div>
+  </header>
